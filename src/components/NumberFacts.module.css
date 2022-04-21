@@ -1,0 +1,140 @@
+@media (min-width: 721px) {
+  .numberFact {
+    background-color: var(--sec-color);
+    border: 0.2rem solid var(--act-color);
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--sec-color);
+
+    width: 80%;
+    margin: 2rem auto;
+    padding: 2em;
+  }
+  .number {
+    margin: 2em auto;
+    margin-right: 5rem;
+  }
+}
+
+@media (max-width: 720px) {
+  body {
+    background-color: var(--sec-color);
+  }
+  .number {
+    margin: 2em 1rem;
+  }
+}
+
+h1 {
+  user-select: none;
+  color: var(--sec-color);
+  background-color: var(--act-color);
+  width: fit-content;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 50%;
+}
+
+input[type='number'] {
+  appearance: textfield;
+
+  outline: none;
+  border: 0.1rem solid transparent;
+  border-radius: 5px;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+
+  background-color: var(--sec-color);
+  color: var(--act-color);
+  padding: 0.8em;
+}
+
+input[type='number']:focus {
+  box-shadow: 0 0 1rem var(--sec-color);
+}
+
+.number {
+  display: inline-block;
+  position: relative;
+}
+
+.numberMinus,
+.numberPlus {
+  user-select: none;
+  position: absolute;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  background-color: var(--sec-color);
+  color: var(--act-color);
+  outline: none;
+  border: none;
+  border-radius: 0.1rem;
+  width: 20%;
+  height: 100%;
+}
+
+.numberPlus {
+  left: 80%;
+  border-left: 0.1rem solid var(--sec-color);
+}
+
+.numberMinus {
+  left: 0;
+  border-right: 0.1rem solid var(--sec-color);
+}
+
+.numberMinus:hover,
+.numberPlus:hover {
+  background-color: black;
+}
+
+select {
+  outline: none;
+  border: 0.1rem solid transparent;
+  border-radius: 5px;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+
+  background-color: var(--sec-color);
+  color: var(--act-color);
+  padding: 0.8em;
+  margin-right: 2rem;
+}
+
+select:focus {
+  box-shadow: 0 0 1rem var(--sec-color);
+}
+
+input[type='submit'] {
+  outline: none;
+  border: 0.1rem solid var(--sec-color);
+  box-shadow: 0 0 1rem var(--sec-color);
+  border-radius: 5px;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+
+  background-color: transparent;
+  color: var(--sec-color);
+  padding: 0.8em;
+  margin: 2rem auto;
+}
+
+input[type='submit']:hover {
+  cursor: pointer;
+}
+
+.fact {
+  padding: 2rem;
+}
+
+form {
+  background-color: var(--main-color);
+  width: fit-content;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 2rem;
+}
