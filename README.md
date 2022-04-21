@@ -7,6 +7,10 @@
 
 ---
 
+ ![preview](./preview.png)
+
+---
+
 What have I learnt while making that poject?
 1. React functional components
 2. Common react hooks (useState, useEffect)
