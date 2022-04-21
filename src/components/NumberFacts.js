@@ -7,7 +7,7 @@ const NumberFacts = () => {
   const [typeFact, setTypeFact] = useState('trivia')
 
   function fetchNumberFact(number, type = 'trivia') {
-    fetch(`http://numbersapi.com/${number}/${type}/?json`)
+    fetch(`http://numbersapi.com/${number}/${type}/?json`, { mode: 'cors' })
       .then((res) => {
         if (res.status === 400) return { text: "Couldn't find anything aproppriate" }
         return res.json()
